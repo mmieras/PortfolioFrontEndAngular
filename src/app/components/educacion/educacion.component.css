@@ -1,0 +1,12 @@
+.row{
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    background-color: white;
+}
+
+h1{
+    text-shadow: 1px 1px 3px rgb(186, 92, 142);
+}

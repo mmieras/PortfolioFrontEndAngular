@@ -1,0 +1,44 @@
+.row{
+    height: 120vh;
+    background-image: url(../../../assets/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center
+}
+
+h1{
+    margin-top: 20%;
+    margin-left: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 3px rgb(186, 92, 142);
+}
+
+
+h1::before{
+    content:'';
+    animation: changingTxt 4s linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes changingTxt{
+    0%{
+        content:'';
+    }
+    20%{
+        content:'❈_';
+    }
+    40%{
+        content:'❈Bienvenido_';
+    }
+    60%{
+        content:'❈Bienvenido al_';
+    }
+    80%{
+        content:'❈Bienvenido al portfolio_';
+    }
+    100%{
+        content:'❈Bienvenido al portfolio❈_';
+    }
+}
+

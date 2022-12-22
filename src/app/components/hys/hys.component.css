@@ -1,0 +1,12 @@
+.row{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h6{
+    text-align: center;
+}
+h1{
+    text-shadow: 1px 1px 3px rgb(186, 92, 142);
+}

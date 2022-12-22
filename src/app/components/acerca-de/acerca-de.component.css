@@ -1,0 +1,43 @@
+.row{
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    background-color: rgb(205, 239, 228);
+    text-align: center;
+}
+
+@media (min-width:576px){
+    #fotodeperfil{
+        position:relative;
+        width: 50%;
+        border-radius: 10%;
+        box-shadow: 3px 3px 3px gray;
+        left: 3%;
+        border: 1px groove #fff;
+    }
+}
+
+@media (max-width:575px){
+    #fotodeperfil{
+        position:relative;
+        width: 30%;
+        border-radius: 10%;
+        box-shadow: 3px 3px 3px gray;
+        left: 3%;
+        top: 10%;
+    }
+}
+
+
+
+#nombre{
+    font-family:cursive;
+    font-weight: bold;
+    margin-top: 10%;
+    
+}
+
+h1{
+    text-shadow: 1px 1px 3px rgb(186, 92, 142);
+}
