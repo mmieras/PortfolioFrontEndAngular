@@ -1,20 +1,20 @@
 <div class="row">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <div class="social-media">
-    <a href="./" class="social-media-icon">
+    <a href="https://es-la.facebook.com/" class="social-media-icon">
         <i class='bx bxl-facebook bx-md'></i>
     </a>
-    <a href="./" class="social-media-icon">
+    <a href="https://www.instagram.com/?hl=es" class="social-media-icon">
         <i class='bx bxl-instagram bx-md'></i>
     </a>
-    <a href="./" class="social-media-icon">
+    <a href="https://twitter.com/" class="social-media-icon">
         <i class='bx bxl-twitter bx-md'></i>
     </a>
-    <a href="./" class="social-media-icon">
+    <a href="https://github.com/mmieras" class="social-media-icon">
         <i class='bx bxl-github bx-md'></i>
     </a>
     <img src="../../../assets/APLogo2.png" alt="" class="logo">
+    <a href="/login"><button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!Islogged">Acceso</button></a>
+    <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="Islogged">Cerrar sesión</button> 
 </div>
 </div>
-
-

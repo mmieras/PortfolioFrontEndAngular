@@ -1,0 +1,38 @@
+[debug] [2023-03-22T22:35:19.922Z] ----------------------------------------------------------------------
+[debug] [2023-03-22T22:35:19.929Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Horacio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-03-22T22:35:19.931Z] CLI Version:   11.24.1
+[debug] [2023-03-22T22:35:19.932Z] Platform:      win32
+[debug] [2023-03-22T22:35:19.932Z] Node Version:  v18.9.0
+[debug] [2023-03-22T22:35:19.990Z] Time:          Wed Mar 22 2023 19:35:19 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-03-22T22:35:19.991Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-22T22:35:20.335Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-22T22:35:20.336Z] > authorizing via signed-in user (mierasmiguelina89@gmail.com)
+[debug] [2023-03-22T22:35:20.336Z] [iam] checking project frontendmmieras for permissions ["firebase.projects.get"]
+[debug] [2023-03-22T22:35:20.337Z] > refreshing access token with scopes: []
+[debug] [2023-03-22T22:35:20.340Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-22T22:35:20.340Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-22T22:35:20.844Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-22T22:35:20.844Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-22T22:35:20.940Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmmieras:testIamPermissions [none]
+[debug] [2023-03-22T22:35:20.940Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmmieras:testIamPermissions x-goog-quota-user=projects/frontendmmieras
+[debug] [2023-03-22T22:35:20.941Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmmieras:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-22T22:35:21.991Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmmieras:testIamPermissions 200
+[debug] [2023-03-22T22:35:21.991Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmmieras:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-22T22:35:21.995Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras [none]
+[debug] [2023-03-22T22:35:22.405Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras 200
+[debug] [2023-03-22T22:35:22.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras {"projectId":"frontendmmieras","projectNumber":"495994282644","displayName":"frontendmmieras","name":"projects/frontendmmieras","resources":{"hostingSite":"frontendmmieras","storageBucket":"frontendmmieras.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE","etag":"1_a8662e71-f1c5-4921-a978-703e6309a9f2"}
+[info] 
+[info] === Serving from 'C:\Users\Horacio\Desktop\Argentina programa\ProyectoFinalMIERAS\PortfolioFrontEnd'...
+[info] 
+[debug] [2023-03-22T22:35:22.422Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/frontendmmieras/sites 
+[debug] [2023-03-22T22:35:23.625Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/frontendmmieras/sites 200
+[debug] [2023-03-22T22:35:23.626Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/frontendmmieras/sites {"sites":[{"name":"projects/frontendmmieras/sites/frontendmmieras","defaultUrl":"https://frontendmmieras.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-22T22:35:23.627Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras/webApps/-/config [none]
+[debug] [2023-03-22T22:35:24.596Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras/webApps/-/config 200
+[debug] [2023-03-22T22:35:24.597Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras/webApps/-/config {"projectId":"frontendmmieras","appId":"1:495994282644:web:8234af538ab89643158a81","storageBucket":"frontendmmieras.appspot.com","locationId":"southamerica-east1","apiKey":"AIzaSyArZcsQ2OB2xtq5LZawfDBLDb3QdkDhfzc","authDomain":"frontendmmieras.firebaseapp.com","messagingSenderId":"495994282644"}
+[debug] [2023-03-22T22:35:24.655Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras [none]
+[debug] [2023-03-22T22:35:25.052Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras 200
+[debug] [2023-03-22T22:35:25.052Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontendmmieras {"projectId":"frontendmmieras","projectNumber":"495994282644","displayName":"frontendmmieras","name":"projects/frontendmmieras","resources":{"hostingSite":"frontendmmieras","storageBucket":"frontendmmieras.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE","etag":"1_a8662e71-f1c5-4921-a978-703e6309a9f2"}
+[info] i  hosting[frontendmmieras]: Serving hosting files from: dist/proyecto-final-mieras {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/proyecto-final-mieras\u001b[22m"}}
+[info] +  hosting[frontendmmieras]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}

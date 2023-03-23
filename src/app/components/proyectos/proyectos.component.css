@@ -12,6 +12,10 @@
     text-align: justify;
 }
 
+#part1{
+    margin-bottom: 15%;
+}
+
 h1{
     text-shadow: 1px 1px 3px rgb(186, 92, 142);
 }

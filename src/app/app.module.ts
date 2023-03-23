@@ -15,6 +15,18 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule } from '@angular/forms';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { NewEperienciaComponent } from './components/experiencia/new-eperiencia/new-eperiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+
 
 @NgModule({
   declarations: [
@@ -28,15 +40,27 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     HysComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    NewEperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

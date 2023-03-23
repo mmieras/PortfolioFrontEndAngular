@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-redes',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./redes.component.css']
 })
 export class RedesComponent implements OnInit {
+  Islogged = false;
 
-  constructor() { }
+  constructor(private router:Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.Islogged = true;
+    }else{
+      this.Islogged = false;
+    }
+  }
+
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
+
+  login(){
+    this.router.navigate(['/login'])
   }
 
 }

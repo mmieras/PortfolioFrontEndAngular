@@ -1,14 +1,5 @@
-.row{
-    height: 120vh;
-    background-image: url(../../../assets/banner3.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: center
-}
-
 h1{
-    margin-top: 20%;
+    margin-top: 2%;
     margin-left: 2%;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 1px 1px 3px rgb(186, 92, 142);
